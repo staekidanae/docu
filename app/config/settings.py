@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'models.fields.apps.FieldsConfig',
     'models.foreignkey.apps.ForeignkeyConfig',
+    'models.manytomany.apps.ManytomanyConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
