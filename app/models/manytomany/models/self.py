@@ -9,3 +9,12 @@ class FacebookUser(models.Model):
 
     def __str__(self):
         return self.name
+
+    def show_friends(self):
+
+        result = ''
+        result += '{}의 친구목록'.format(self.name)
+        for fri in self.friends:
+            result += '{}'.format(fri.name)
+
+        print(result)
